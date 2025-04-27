@@ -20,6 +20,7 @@ dependencies:
     - qpoases >= 3.2.0
     - quadprog >= 0.1.11
     - scs >= 3.2.2
+    - sip >= 0.0.2
     - pip:
         - highspy >= 1.5.2
         - qpalm >= 1.2.1

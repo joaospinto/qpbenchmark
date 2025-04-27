@@ -35,6 +35,7 @@ class SolverSettings:
             "qpswift",
             "quadprog",
             "scs",
+            "sip",
         ]
     )
 
@@ -125,6 +126,7 @@ class SolverSettings:
 
         self.__settings["qpswift"]["RELTOL"] = eps_abs * np.sqrt(3.0)
         self.__settings["scs"]["eps_abs"] = eps_abs
+        self.__settings["sip"]["max_kkt_violation"] = eps_abs
 
     def set_eps_rel(self, eps_rel: float) -> None:
         """Set relative tolerances for solvers that support it.
